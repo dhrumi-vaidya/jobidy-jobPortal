@@ -1,0 +1,52 @@
+.section-bg {
+  background-color: #fefefe;
+  padding: 10px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.section-header {
+  background: #f4f6fa;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.job {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 180px;
+}
+
+.job:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Category backgrounds */
+.job-software {
+  background-color: #e6f0ff;
+}
+.job-frontend {
+  background-color: #fff7e6;
+}
+.job-fullstack {
+  background-color: #e6fff2;
+}
+.job-data {
+  background-color: #e6faff;
+}
+.job-applied {
+  background-color: #f9f9f9;
+}
+.job-doc {
+  background-color: #f0f2f5;
+}
+
+.text-label {
+  font-size: 14px;
+  color: #6c757d;
+}
+.doccard {
+  min-height: auto;
+}

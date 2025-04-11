@@ -1,0 +1,223 @@
+<div class="container my-1">
+  <!-- Job Search Button -->
+  <div class="text-center mb-5">
+    <div class="input-group input-group-lg shadow-sm w-75 mx-auto rounded">
+      <span class="input-group-text bg-primary text-white border-0">
+        <i class="bi bi-search"></i>
+      </span>
+      <input
+        type="text"
+        class="form-control border-0"
+        placeholder="Search for jobs, roles, skills..."
+        aria-label="Job Search"
+      />
+      <button class="btn btn-primary px-4" type="button">Search</button>
+    </div>
+  </div>
+
+  <!-- Job Categories with Icons -->
+  <div
+    class="d-flex justify-content-around align-items-center flex-wrap gap-3 mb-5"
+  >
+    <div class="text-center">
+      <img
+        src="/assets/frontend.jpg"
+        class="img-thumbnail rounded-circle shadow-sm"
+        alt="Frontend"
+        width="100"
+      />
+      <p class="mt-2 fw-semibold">Frontend</p>
+    </div>
+    <div class="text-center">
+      <img
+        src="/assets/frontend-02.jpg"
+        class="img-thumbnail rounded-circle shadow-sm"
+        alt="Backend"
+        width="100"
+      />
+      <p class="mt-2 fw-semibold">Backend</p>
+    </div>
+    <div class="text-center">
+      <img
+        src="/assets/fullstack.jpg"
+        class="img-thumbnail rounded-circle shadow-sm"
+        alt="Full Stack"
+        width="100"
+        height="100%"
+      />
+      <p class="mt-2 fw-semibold">Fullstack</p>
+    </div>
+    <div class="text-center">
+      <img
+        src="/assets/android.jpg"
+        class="img-thumbnail rounded-circle shadow-sm"
+        alt="Android"
+        width="100"
+      />
+      <p class="mt-2 fw-semibold">Android</p>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-outline-primary mt-2 px-4 shadow-sm">
+        View All <i class="bi bi-chevron-double-right ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Job Listings -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <!-- Job Card -->
+    <div class="col">
+      <div class="card border-0 shadow-lg hover-shadow transition">
+        <div class="card-body d-flex align-items-start">
+          <img
+            src="/assets/person-1.jpg"
+            class="me-3 rounded-circle shadow-sm"
+            alt="Profile"
+            width="80"
+          />
+          <div>
+            <h5 class="card-title fw-bold text-primary">
+              Full Stack Developer
+            </h5>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-building me-1"></i> WebWorks
+            </p>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-clock me-1"></i> Posted: 1 day ago
+            </p>
+            <p class="card-text mb-2 text-muted">
+              <i class="bi bi-person-fill me-1"></i> Applications: 60
+            </p>
+
+            <button
+              class="btn btn-success btn-sm px-3 shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#jobApplyModal"
+              (click)="
+                openJob('Frontend Developer', 'Prodigy Tech', 'Apr 5, 2025')
+              "
+            >
+              <i class="bi bi-send me-1"></i> Apply
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Card 2 -->
+    <div class="col">
+      <div class="card border-0 shadow-lg hover-shadow transition">
+        <div class="card-body d-flex align-items-start">
+          <img
+            src="/assets/person-g1.png"
+            class="me-3 rounded-circle shadow-sm"
+            alt="Profile"
+            width="80"
+          />
+          <div>
+            <h5 class="card-title fw-bold text-primary">Backend Developer</h5>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-building me-1"></i> Innovatech
+            </p>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-clock me-1"></i> Posted: 4 hours ago
+            </p>
+            <p class="card-text mb-2 text-muted">
+              <i class="bi bi-person-fill me-1"></i> Applications: 40
+            </p>
+            <button
+              class="btn btn-success btn-sm px-3 shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#jobApplyModal"
+              (click)="
+                openJob('Frontend Developer', 'Prodigy Tech', 'Apr 5, 2025')
+              "
+            >
+              <i class="bi bi-send me-1"></i> Apply
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Card 3 -->
+    <div class="col">
+      <div class="card border-0 shadow-lg hover-shadow transition">
+        <div class="card-body d-flex align-items-start">
+          <img
+            src="/assets/person-3.jpg"
+            class="me-3 rounded-circle shadow-sm"
+            alt="Profile"
+            width="80"
+          />
+          <div>
+            <h5 class="card-title fw-bold text-primary">
+              Machine Learning Engineer
+            </h5>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-building me-1"></i> AI Innovators
+            </p>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-clock me-1"></i> Posted: 5 hours ago
+            </p>
+            <p class="card-text mb-2 text-muted">
+              <i class="bi bi-person-fill me-1"></i> Applications: 35
+            </p>
+            <button
+              class="btn btn-success btn-sm px-3 shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#jobApplyModal"
+              (click)="
+                openJob('Frontend Developer', 'Prodigy Tech', 'Apr 5, 2025')
+              "
+            >
+              <i class="bi bi-send me-1"></i> Apply
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Card 4 -->
+    <div class="col">
+      <div class="card border-0 shadow-lg hover-shadow transition">
+        <div class="card-body d-flex align-items-start">
+          <img
+            src="/assets/person-g2.png"
+            class="me-3 rounded-circle shadow-sm"
+            alt="Profile"
+            width="80"
+          />
+          <div>
+            <h5 class="card-title fw-bold text-primary">Data Scientist</h5>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-building me-1"></i> DataMinds
+            </p>
+            <p class="card-text mb-1 text-muted">
+              <i class="bi bi-clock me-1"></i> Posted: 2 days ago
+            </p>
+            <p class="card-text mb-2 text-muted">
+              <i class="bi bi-person-fill me-1"></i> Applications: 25
+            </p>
+            <button
+              class="btn btn-success btn-sm px-3 shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#jobApplyModal"
+              (click)="
+                openJob('Frontend Developer', 'Prodigy Tech', 'Apr 5, 2025')
+              "
+            >
+              <i class="bi bi-send me-1"></i> Apply
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-apply
+    [jobTitle]="selectedJobTitle"
+    [company]="selectedCompany"
+    [postedDate]="selectedPostedDate"
+  >
+  </app-apply>
+</div>

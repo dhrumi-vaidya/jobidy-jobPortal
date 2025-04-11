@@ -1,0 +1,18 @@
+#job-dashboard h4 {
+  color: #2c3e50;
+}
+
+.card h5,
+.card h6 {
+  color: #34495e;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}

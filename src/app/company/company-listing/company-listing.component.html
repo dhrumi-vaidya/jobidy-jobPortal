@@ -1,0 +1,151 @@
+<div class="container-fluid" style="padding-top: 10px">
+  <!-- 🔍 Search & Filter Section -->
+  <div class="row mb-4 dashboard-section">
+    <div class="col-sm-12 mb-2">
+      <h4 class="text-center">🔎 Search & Filter Jobs</h4>
+    </div>
+    <div class="col-sm-6">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search job titles..."
+      />
+    </div>
+    <div class="col-sm-3">
+      <select class="form-control">
+        <option>All Statuses</option>
+        <option>Open</option>
+        <option>Closed</option>
+        <option>Draft</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      <select class="form-control">
+        <option>Sort By</option>
+        <option>Newest First</option>
+        <option>Most Applications</option>
+        <option>Most Viewed</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-12 text-left line">
+    <h4>📈 Detailed Job Metrics</h4>
+  </div>
+  <div class="row" style="margin: 10px 0">
+    <div class="col-sm-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Date Posted</th>
+            <th>Applications</th>
+            <th>Views</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python Developer</td>
+            <td>01/05/2024</td>
+            <td>50</td>
+            <td>200</td>
+            <td>Open</td>
+            <td>
+              <button class="btn btn-info" style="margin-right: 10px">
+                View
+              </button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Frontend Developer</td>
+            <td>01/10/2024</td>
+            <td>30</td>
+            <td>150</td>
+            <td>Open</td>
+            <td>
+              <button class="btn btn-info" style="margin-right: 10px">
+                View
+              </button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- 📌 Status Summary -->
+  <div class="col-sm-12 text-left line dashboard-section">
+    <h4>📌 Job Status Summary</h4>
+
+    <div class="row text-center" style="margin: 10px 0">
+      <div class="col-sm-3">
+        <div class="jobs">
+          <p>Open Jobs</p>
+          <p><strong>3</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="jobs">
+          <p>Closed Jobs</p>
+          <p><strong>1</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="jobs">
+          <p>Drafts</p>
+          <p><strong>1</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="jobs">
+          <p>Total Applications</p>
+          <p><strong>80</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ⏰ Upcoming Deadlines -->
+  <div class="row mb-4 p-2 mt-4">
+    <div class="col-sm-12">
+      <h4 class="text-left">⏰ Upcoming Job Deadlines</h4>
+      <div class="jobs">
+        <ul>
+          <li>Frontend Developer – Deadline: 01/15/2024</li>
+          <li>UI/UX Designer – Deadline: 01/20/2024</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📈 Detailed Table -->
+
+  <!-- ✏️ Edit Job Modal (kept as-is) -->
+
+  <!-- 📰 Recent Activity -->
+  <div class="col-sm-12 text-center line dashboard-section">
+    <h4>📰 Recent Activity Feed</h4>
+
+    <div class="row" style="margin: 10px 0">
+      <div class="col-sm-6">
+        <div class="jobs">
+          <h5>📨 Recent Applications</h5>
+          <ul>
+            <li>Karan Sharma applied for Python Developer on 01/12/2024</li>
+            <li>Dhrumi Vaidya applied for Frontend Developer on 01/11/2024</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="jobs">
+          <h5>📩 Recent Messages</h5>
+          <ul>
+            <li>Message from Karan Sharma regarding application status.</li>
+            <li>Message from Dhrumi Vaidya about interview scheduling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,127 @@
+<section class="section-bg mb-1">
+  <div class="section-header d-flex align-items-center mb-3">
+    <i class="bi bi-fire text-danger fs-4 me-2"></i>
+    <h4 class="mb-0">Trending Jobs</h4>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-3">
+      <a class="text-decoration-none" [routerLink]="'/trendingJobs'">
+        <div class="job card p-3 text-center shadow job-software">
+          <i class="bi bi-laptop text-primary fs-2 mb-2"></i>
+          <h6 class="text-muted">Job Position:</h6>
+          <h5><b>Software Engineer</b></h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <a class="text-decoration-none" [routerLink]="'/trendingJobs'">
+        <div class="job card p-3 text-center shadow job-frontend">
+          <i class="bi bi-braces text-warning fs-2 mb-2"></i>
+          <h6 class="text-muted">Job Position:</h6>
+          <h5><b>Front-end Dev.</b></h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3">
+      <a class="text-decoration-none" [routerLink]="'/trendingJobs'">
+        <div class="job card p-3 text-center shadow job-fullstack">
+          <i class="bi bi-stack text-success fs-2 mb-2"></i>
+          <h6 class="text-muted">Job Position:</h6>
+          <h5><b>Full Stack Dev.</b></h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3" [routerLink]="'/trendingJobs'">
+      <a class="text-decoration-none">
+        <div class="job card p-3 text-center shadow job-data">
+          <i class="bi bi-bar-chart-line text-info fs-2 mb-2"></i>
+          <h6 class="text-muted">Job Position:</h6>
+          <h5><b>Data Analyst</b></h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Applied Jobs Section -->
+<section class="section-bg mb-2">
+  <div class="section-header d-flex align-items-center mb-3">
+    <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+    <h4 class="mb-0">Applied Jobs</h4>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-md-4">
+      <a class="text-decoration-none" [routerLink]="'/appliedJobs'">
+        <div class="job card p-3 h-100 job-applied shadow">
+          <p>
+            <i class="bi bi-laptop text-primary"></i>
+            <b> Job role: SDE</b><br /><br />
+            <i class="bi bi-building text-muted"></i> <b>TatvaSoft</b>: Software
+            Engineer<br />
+            <i class="bi bi-building text-muted"></i> <b>MediaTek</b>: Software
+            Engineer<br />
+            <i class="bi bi-building text-muted"></i> <b>Ridgent</b>: Software
+            Engineer
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a class="text-decoration-none" [routerLink]="'/appliedJobs'">
+        <div class="job card p-3 h-100 job-applied shadow">
+          <p>
+            <i class="bi bi-brush text-warning"></i>
+            <b> Job role: Front-end</b><br /><br />
+            <i class="bi bi-building text-muted"></i> <b>InfoLabz</b>: Frontend
+            Developer<br />
+            <i class="bi bi-building text-muted"></i> <b>Prodigy</b>: Frontend
+            Developer<br />
+            <i class="bi bi-building text-muted"></i> <b>MaxGen</b>: Frontend
+            Developer
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a class="text-decoration-none" [routerLink]="'/appliedJobs'">
+        <div class="job card p-3 h-100 job-applied shadow">
+          <p>
+            <i class="bi bi-mortarboard text-info"></i>
+            <b> Job role: Internship</b><br /><br />
+            <i class="bi bi-building text-muted"></i> <b>CodChef</b>: Web Dev
+            Intern<br />
+            <i class="bi bi-building text-muted"></i> <b>BharatEp</b>: Full
+            Stack Intern<br />
+            <i class="bi bi-building text-muted"></i> <b>TechNishal</b>: MERN
+            Intern
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Your Documents Section -->
+<section class="section-bg">
+  <div class="section-header d-flex align-items-center mb-3">
+    <i class="bi bi-file-earmark-text text-secondary fs-4 me-2"></i>
+    <h4 class="mb-0">Your Documents</h4>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-md-4">
+      <div class="job card p-3 text-center shadow job-doc doccard">
+        <a href="demo_resume.pdf" class="text-dark fw-medium">
+          <i class="bi bi-filetype-pdf text-danger fs-5 me-2"></i> Resume
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="job card p-3 text-center shadow job-doc doccard">
+        <a href="Cv.pdf" class="text-dark fw-medium">
+          <i class="bi bi-file-earmark-person text-primary fs-5 me-2"></i>
+          CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
